@@ -1,1 +1,19 @@
-测试git
+git 命令：
+git --version					 查看当前git使用的版本号
+git init                       		 	 初始化项目，它会在文件夹内创建一个.git的文件
+git status                     			 查看当前状态“红色说明文件被修改但是未被加入暂存区”“绿色说明已在暂存区，未被提交到本地库”
+git add  文件名          			 将本地文件提交到暂存区
+git rm --cached 文件名 			 将删除暂存区文件，不删除本地文件
+git commit -m “日志信息”文件名  	 将暂存区文件提交到本地库
+git reflog            				 查看版本信息日志
+git log               				 查看详细日期    
+git reset --hard 版本号      		 版本穿梭“版本号可通过git reflog 命令查看”
+
+git分支操作：
+git branch -v 				查看分支“绿色为当前操作的分支，灰色则是非当前操作的分支”
+git branch 分支名称			创建分支
+git checkout 分支名称			切换分支
+git merge 分支名				合并分支
+
+
+
